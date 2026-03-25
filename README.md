@@ -1,7 +1,5 @@
 # HealthOS – B2B Healthcare SaaS UI
 
-![HealthOS App Preview](./public/favicon.svg) <!-- Replace with a real screenshot if available, but a logo is fine -->
-
 HealthOS is a modern, responsive, and fully functional B2B Healthcare SaaS frontend application built as an assignment demonstration. It provides a comprehensive platform for patient management, clinical analytics, and hospital administration with a premium user interface and seamless user experience.
 
 ## ✨ Features
@@ -50,6 +48,9 @@ VITE_FIREBASE_APP_ID=your_app_id
 VITE_FIREBASE_MEASUREMENT_ID=your_measurement_id
 ```
 *(Note: Ensure your Cloud Firestore API is enabled in your Google Cloud Console before running).*
+
+### 4. Deploying to Vercel
+When deploying this project to Vercel (or any other hosting provider), ensure that **all 7 Firebase environment variables** listed above are added to your project's Environment Variables settings in the Vercel dashboard. Since `.env` is securely ignored by Git, the build will fail or the app will not work if these are not provided to the deployment server!
 
 ### 3. Run Development Server
 ```bash
